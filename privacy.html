@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy | Mitoba Consulting Ltd</title>
+<meta name="description" content="Privacy Policy for Mitoba Consulting Ltd. Learn how we collect, use, and protect your personal data under UK GDPR.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.mitobaconsulting.com/privacy.html">
+
+<!-- Favicon (SVG with teal "M") -->
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230D9488'/%3E%3Ctext x='32' y='44' font-family='Arial,sans-serif' font-size='36' font-weight='bold' fill='white' text-anchor='middle'%3EM%3C/text%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --navy: #0C1F3F;
+  --navy-mid: #162D54;
+  --navy-light: #1E3A6E;
+  --teal: #0D9488;
+  --teal-dark: #0B7C72;
+  --teal-light: #5EEAD4;
+  --teal-glow: rgba(13,148,136,0.12);
+  --cream: #F8F6F1;
+  --warm-white: #FDFCFA;
+  --text: #1A1A1A;
+  --text-muted: #5A5A5A;
+  --text-light: #8A8A8A;
+  --border: #E2E0DB;
+  --display: 'Playfair Display', Georgia, serif;
+  --body: 'DM Sans', -apple-system, sans-serif;
+}
+
+html { scroll-behavior: smooth; }
+body { font-family: var(--body); color: var(--text); background: var(--warm-white); line-height: 1.65; -webkit-font-smoothing: antialiased; }
+
+/* ---- NAV ---- */
+nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  padding: 0 48px; height: 72px;
+  display: flex; align-items: center; justify-content: space-between;
+  background: rgba(252,252,250,0.85); backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+  transition: all 0.3s;
+}
+nav.scrolled { background: rgba(252,252,250,0.95); box-shadow: 0 1px 12px rgba(0,0,0,0.06); }
+.nav-logo { font-family: var(--body); font-weight: 700; font-size: 18px; color: var(--navy); letter-spacing: -0.02em; text-decoration: none; }
+.nav-logo span { color: var(--teal); }
+.nav-links { display: flex; align-items: center; gap: 36px; }
+.nav-links a { font-size: 14px; font-weight: 500; color: var(--text-muted); text-decoration: none; transition: color 0.2s; letter-spacing: 0.01em; }
+.nav-links a:hover { color: var(--navy); }
+.nav-cta {
+  background: var(--navy); color: white; padding: 10px 24px; border-radius: 8px;
+  font-size: 14px; font-weight: 600; text-decoration: none; transition: all 0.2s;
+  letter-spacing: 0.01em;
+}
+.nav-cta:hover { background: var(--navy-mid); transform: translateY(-1px); }
+.mobile-menu { display: none; background: none; border: none; cursor: pointer; }
+.mobile-menu svg { width: 24px; height: 24px; stroke: var(--navy); }
+
+/* ---- PAGE HEADER ---- */
+.page-header {
+  background: var(--navy); padding: 140px 48px 60px; position: relative; overflow: hidden;
+}
+.page-header::before {
+  content: ''; position: absolute; inset: 0;
+  background: radial-gradient(ellipse at 30% 50%, rgba(13,148,136,0.12) 0%, transparent 50%);
+}
+.page-header-inner { position: relative; z-index: 2; max-width: 720px; margin: 0 auto; }
+.page-header-inner h1 {
+  font-family: var(--display); font-size: clamp(32px, 4vw, 48px);
+  font-weight: 600; color: white; line-height: 1.2; letter-spacing: -0.02em; margin-bottom: 12px;
+}
+.page-header-inner p { font-size: 16px; color: rgba(255,255,255,0.55); }
+
+/* ---- CONTENT ---- */
+.content-section { padding: 64px 48px 100px; }
+.content-inner {
+  max-width: 720px; margin: 0 auto;
+}
+.content-inner h2 {
+  font-family: var(--display); font-size: 26px; font-weight: 600;
+  color: var(--navy); margin-top: 48px; margin-bottom: 16px; line-height: 1.3;
+  letter-spacing: -0.01em;
+}
+.content-inner h3 {
+  font-size: 18px; font-weight: 600; color: var(--navy); margin-top: 32px; margin-bottom: 12px;
+}
+.content-inner p {
+  font-size: 16px; color: var(--text-muted); line-height: 1.8; margin-bottom: 16px;
+}
+.content-inner ul {
+  list-style: none; margin-bottom: 16px; padding-left: 0;
+}
+.content-inner ul li {
+  font-size: 15px; color: var(--text-muted); line-height: 1.75;
+  padding: 4px 0 4px 24px; position: relative;
+}
+.content-inner ul li::before {
+  content: ''; position: absolute; left: 0; top: 13px;
+  width: 6px; height: 6px; border-radius: 50%; background: var(--teal);
+}
+.content-inner a { color: var(--teal-dark); text-decoration: underline; transition: color 0.2s; }
+.content-inner a:hover { color: var(--teal); }
+.content-inner strong { color: var(--text); font-weight: 600; }
+.last-updated {
+  font-size: 13px; color: var(--text-light); margin-top: 48px; padding-top: 24px;
+  border-top: 1px solid var(--border);
+}
+
+/* ---- FOOTER ---- */
+footer {
+  background: var(--navy); border-top: 1px solid rgba(255,255,255,0.06);
+  padding: 48px 48px 32px; color: rgba(255,255,255,0.4); font-size: 13px;
+}
+.footer-inner { max-width: 1100px; margin: 0 auto; }
+.footer-top { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 40px; }
+.footer-brand .nav-logo { color: white; font-size: 20px; }
+.footer-brand p { margin-top: 8px; max-width: 280px; line-height: 1.6; }
+.footer-links { display: flex; gap: 48px; }
+.footer-col h4 { color: rgba(255,255,255,0.7); font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 16px; }
+.footer-col a { display: block; color: rgba(255,255,255,0.4); text-decoration: none; font-size: 14px; margin-bottom: 10px; transition: color 0.2s; }
+.footer-col a:hover { color: var(--teal-light); }
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.06); padding-top: 24px;
+  display: flex; justify-content: space-between; align-items: center;
+}
+
+/* ---- RESPONSIVE ---- */
+@media (max-width: 900px) {
+  nav { padding: 0 24px; }
+  .nav-links { display: none; }
+  .mobile-menu { display: block; }
+  .page-header { padding: 120px 24px 48px; }
+  .content-section { padding: 48px 24px 80px; }
+  .content-inner h2 { font-size: 22px; margin-top: 36px; }
+  .footer-top { flex-direction: column; gap: 32px; }
+  .footer-links { gap: 32px; }
+  .footer-bottom { flex-direction: column; gap: 12px; text-align: center; }
+  footer { padding: 48px 24px 32px; }
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="nav">
+  <a href="/" class="nav-logo">mitoba<span>.</span></a>
+  <div class="nav-links">
+    <a href="/#services">Services</a>
+    <a href="/#quickreply">QuickReply</a>
+    <a href="/#pricing">Pricing</a>
+    <a href="/#about">About</a>
+    <a href="/#contact" class="nav-cta">Get in touch</a>
+  </div>
+  <button class="mobile-menu" onclick="document.querySelector('.nav-links').style.display=document.querySelector('.nav-links').style.display==='flex'?'none':'flex'">
+    <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+  </button>
+</nav>
+
+<!-- PAGE HEADER -->
+<div class="page-header">
+  <div class="page-header-inner">
+    <h1>Privacy Policy</h1>
+    <p>How we collect, use, and protect your personal data.</p>
+  </div>
+</div>
+
+<!-- CONTENT -->
+<div class="content-section">
+  <div class="content-inner">
+
+    <p>Mitoba Consulting Ltd ("we", "us", "our") is committed to protecting your privacy and handling your personal data responsibly. This policy explains what data we collect, why we collect it, and your rights under the UK General Data Protection Regulation (UK GDPR) and the Data Protection Act 2018.</p>
+
+    <p><strong>Data controller:</strong> Mitoba Consulting Ltd, Ipswich, Suffolk, United Kingdom.<br>
+    <strong>Contact email:</strong> <a href="mailto:hello@mitobaconsulting.com">hello@mitobaconsulting.com</a></p>
+
+    <h2>1. What data we collect</h2>
+
+    <h3>Contact form submissions</h3>
+    <p>When you submit a message through the contact form on our website, we collect:</p>
+    <ul>
+      <li>Your name</li>
+      <li>Your email address</li>
+      <li>Your phone number (if provided)</li>
+      <li>Your company or business name (if provided)</li>
+      <li>The content of your message</li>
+    </ul>
+
+    <h3>Chatbot interactions</h3>
+    <p>If you interact with our QuickReply AI chatbot or any demonstration chatbot on our website, we may collect:</p>
+    <ul>
+      <li>The content of your conversation</li>
+      <li>Any personal details you share during the chat (name, phone number, email)</li>
+      <li>Timestamps of your interaction</li>
+    </ul>
+
+    <h3>Website analytics</h3>
+    <p>We collect anonymised, aggregated data about how visitors use our website, which may include:</p>
+    <ul>
+      <li>Pages visited and time spent on each page</li>
+      <li>Referring website or source</li>
+      <li>Browser type, device type, and screen resolution</li>
+      <li>Approximate geographic location (country/region level)</li>
+      <li>IP address (anonymised where possible)</li>
+    </ul>
+
+    <h2>2. How we use your data</h2>
+    <p>We use the personal data we collect for the following purposes:</p>
+    <ul>
+      <li><strong>To respond to your enquiries</strong> &mdash; when you contact us via our form or chatbot, we use your details to reply and follow up</li>
+      <li><strong>To provide our services</strong> &mdash; if you become a client, we use your contact details to manage our working relationship</li>
+      <li><strong>To improve our website</strong> &mdash; analytics data helps us understand how visitors use our site so we can improve the experience</li>
+      <li><strong>To send relevant communications</strong> &mdash; only if you have explicitly opted in to receive updates from us</li>
+    </ul>
+    <p>We will never sell your personal data to third parties.</p>
+
+    <h2>3. Lawful basis for processing</h2>
+    <p>Under UK GDPR, we process your data on the following lawful bases:</p>
+    <ul>
+      <li><strong>Consent</strong> &mdash; when you voluntarily submit a contact form or engage with our chatbot</li>
+      <li><strong>Legitimate interests</strong> &mdash; to respond to enquiries, improve our services, and maintain the security of our website</li>
+      <li><strong>Contract</strong> &mdash; when processing is necessary to fulfil a service agreement with you</li>
+    </ul>
+
+    <h2>4. Cookie policy</h2>
+    <p>Our website uses cookies to enhance your browsing experience. Cookies are small text files stored on your device by your browser.</p>
+
+    <h3>Essential cookies</h3>
+    <p>These are necessary for the website to function properly. They do not collect personal data and cannot be disabled.</p>
+
+    <h3>Analytics cookies</h3>
+    <p>We use analytics cookies to understand how visitors interact with our website. These cookies collect anonymised data and help us improve our site. You can opt out of analytics cookies through your browser settings or through our cookie notice.</p>
+
+    <h3>Managing cookies</h3>
+    <p>You can control and delete cookies through your browser settings. Please note that disabling certain cookies may affect the functionality of our website. Most browsers allow you to refuse cookies or alert you when a cookie is being set.</p>
+
+    <h2>5. Third-party services</h2>
+    <p>We use a limited number of trusted third-party services to operate our website:</p>
+    <ul>
+      <li><strong>Formspree</strong> &mdash; processes contact form submissions on our behalf. Formspree's privacy policy can be found at <a href="https://formspree.io/legal/privacy-policy" target="_blank" rel="noopener">formspree.io/legal/privacy-policy</a></li>
+      <li><strong>Google Fonts</strong> &mdash; serves web fonts for our website. Google may collect anonymised usage data</li>
+      <li><strong>Analytics provider</strong> &mdash; we use privacy-respecting analytics to understand website usage. Data is anonymised and aggregated</li>
+    </ul>
+    <p>We ensure that all third-party processors comply with UK GDPR requirements and have appropriate data processing agreements in place.</p>
+
+    <h2>6. Data retention</h2>
+    <p>We retain your personal data only for as long as necessary to fulfil the purposes for which it was collected:</p>
+    <ul>
+      <li><strong>Contact form submissions</strong> &mdash; retained for up to 24 months after your last interaction with us, unless you become a client</li>
+      <li><strong>Chatbot conversations</strong> &mdash; retained for up to 12 months for service improvement purposes</li>
+      <li><strong>Client data</strong> &mdash; retained for the duration of our business relationship plus 6 years to comply with legal and accounting obligations</li>
+      <li><strong>Analytics data</strong> &mdash; retained in anonymised, aggregated form and does not identify individuals</li>
+    </ul>
+
+    <h2>7. Data security</h2>
+    <p>We take appropriate technical and organisational measures to protect your personal data against unauthorised access, alteration, disclosure, or destruction. This includes using encrypted connections (HTTPS), secure hosting, and limiting access to personal data to authorised personnel only.</p>
+
+    <h2>8. Your rights under UK GDPR</h2>
+    <p>Under UK data protection law, you have the following rights:</p>
+    <ul>
+      <li><strong>Right of access</strong> &mdash; you can request a copy of the personal data we hold about you</li>
+      <li><strong>Right to rectification</strong> &mdash; you can ask us to correct any inaccurate or incomplete data</li>
+      <li><strong>Right to erasure</strong> &mdash; you can ask us to delete your personal data ("right to be forgotten")</li>
+      <li><strong>Right to restrict processing</strong> &mdash; you can ask us to limit how we use your data</li>
+      <li><strong>Right to data portability</strong> &mdash; you can request your data in a structured, machine-readable format</li>
+      <li><strong>Right to object</strong> &mdash; you can object to processing based on legitimate interests</li>
+      <li><strong>Right to withdraw consent</strong> &mdash; where processing is based on consent, you can withdraw it at any time</li>
+    </ul>
+    <p>To exercise any of these rights, please contact us at <a href="mailto:hello@mitobaconsulting.com">hello@mitobaconsulting.com</a>. We will respond to your request within one month.</p>
+
+    <h2>9. International data transfers</h2>
+    <p>Some of our third-party service providers may process data outside the United Kingdom. Where this occurs, we ensure that appropriate safeguards are in place, such as Standard Contractual Clauses or adequacy decisions, to protect your data in accordance with UK GDPR.</p>
+
+    <h2>10. Complaints</h2>
+    <p>If you are unhappy with how we have handled your personal data, you have the right to lodge a complaint with the Information Commissioner's Office (ICO):</p>
+    <ul>
+      <li>Website: <a href="https://ico.org.uk" target="_blank" rel="noopener">ico.org.uk</a></li>
+      <li>Telephone: 0303 123 1113</li>
+    </ul>
+    <p>We would appreciate the opportunity to address your concerns directly before you contact the ICO. Please reach out to us at <a href="mailto:hello@mitobaconsulting.com">hello@mitobaconsulting.com</a> first.</p>
+
+    <h2>11. Changes to this policy</h2>
+    <p>We may update this privacy policy from time to time to reflect changes in our practices or legal requirements. Any significant changes will be communicated via our website. We encourage you to review this page periodically.</p>
+
+    <p class="last-updated">Last updated: March 2026</p>
+
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="/" class="nav-logo" style="color:white">mitoba<span>.</span></a>
+        <p>AI-powered business solutions. Built in Suffolk, serving the UK.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>Services</h4>
+          <a href="/#quickreply">QuickReply AI Chatbot</a>
+          <a href="/#services">Digital Products</a>
+          <a href="/#pricing">Pricing</a>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <a href="/#about">About</a>
+          <a href="mailto:hello@mitobaconsulting.com">Contact</a>
+          <a href="/privacy.html">Privacy Policy</a>
+        </div>
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <a href="#">LinkedIn</a>
+          <a href="mailto:hello@mitobaconsulting.com">hello@mitobaconsulting.com</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Mitoba Consulting Ltd. Registered in England and Wales. All rights reserved.</span>
+      <span>Ipswich, Suffolk, UK</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+// Nav scroll effect
+window.addEventListener('scroll', () => {
+  document.getElementById('nav').classList.toggle('scrolled', window.scrollY > 40);
+});
+</script>
+</body>
+</html>
